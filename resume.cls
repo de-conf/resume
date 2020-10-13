@@ -1,5 +1,5 @@
 %%
-%% Copyright (c) 2018-2019 Weitian LI
+%% Copyright (c) 2019-2020 JiaGeng Chen
 %% Copyright (c) 2016 Christophe Roger
 %% The LaTeX Project Public License (LPPL) Version 1.3c
 %%
