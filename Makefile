@@ -1,7 +1,6 @@
 DEPS:= resume.cls fontawesome5/fontawesome5.sty
 SRCS:= resume-zh.tex 
 PDFS:= $(SRCS:%.tex=%.pdf)
-PDFCAT:= resume-zh+en.pdf
 
 DATE= $(shell date +%Y%m%d)
 DISTDIR= resume.$(DATE)

@@ -113,7 +113,7 @@
 \newcommand*{\locationSymbol}{\faMapMarkerAlt}
 \newcommand*{\phoneSymbol}{\faPhone}
 \newcommand*{\universitySymbol}{\faUniversity}
-
+%\newcommand*{\workSymbol}{\fa}
 % Color setup
 \ifdef{\@monochrome}%
   {\definecolor{basecolor}{HTML}{000000}}%
