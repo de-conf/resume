@@ -10,4 +10,5 @@ photo.*
 submitted/
 dist/
 *.tar.bz2
+resume-zh.synctex.gz
 resume-en.pdf
