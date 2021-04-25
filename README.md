@@ -1,7 +1,7 @@
 My Resume and LaTeX Template
 ============================
 
-**de-conf** `<chenjiagen88@gmail.com>`
+**de-conf** `<mail@deconf.xyz>`
 
 Introduction
 ------------
