@@ -14,6 +14,7 @@
 
 \ProvidesClass{resume}[2020/06/21 v2.4.9 Resume Class]
 \LoadClass{article}
+% \loadClass{}
 
 %%
 %% Class options
@@ -113,6 +114,8 @@
 \newcommand*{\locationSymbol}{\faMapMarkerAlt}
 \newcommand*{\phoneSymbol}{\faPhone}
 \newcommand*{\universitySymbol}{\faUniversity}
+\newcommand*{\job}{\faBriefcase}
+\newcommand*{\blogSymbol}{\faBlogger}
 %\newcommand*{\workSymbol}{\fa}
 % Color setup
 \ifdef{\@monochrome}%
@@ -180,6 +183,10 @@
 
 \newcommand*{\githublink}[2]{%
   \href{http://github.com/#1/#2}{\githubSymbol{} #1/#2}%
+}
+
+\newcommand*{\bloglink}[2]{%
+  \href{http://github.com/#1/#2}{\blogSymbol{} #1/#2}%
 }
 
 \newcommand*{\link}[2]{\textcolor{linkcolor}{\href{#1}{#2}}}
@@ -269,7 +276,11 @@
 % Information
 \newcommand*{\info}[1]{\icontext{\infoSymbol}{#1}}
 % Mobile phone
-\newcommand*{\mobile}[1]{\icontext{\mobileSymbol}{#1}}
+\newcommand*{\mobile}[1]{
+  \iconlink{\mobileSymbol}{tel:#1}{\texttt{#1}}
+}
+  % \icontext{\mobileSymbol}{#1}}
+% wtai://wp/mc;
 % Phone
 \newcommand*{\phone}[1]{\icontext{\phoneSymbol}{#1}}
 % Degree
@@ -288,6 +299,12 @@
   \iconlink{\githubSymbol}%
     {https://github.com/#1}%
     {\texttt{github.com/#1}}%
+}
+% Blog Link
+\newcommand*{\blog}[1]{%
+  \iconlink{\blogSymbol}%
+    {https://#1}%
+    {\texttt{#1}}%
 }
 % Email address
 \newcommand*{\email}[1]{%
@@ -522,7 +539,7 @@
   \bigskip
 }
 
-\newcommand*{\referee}[5]{%
+\newcommand*{\referee}[6]{%
   \hspace{1em}
   \begin{minipage}[t]{\dimexpr(\linewidth/3) - 3em}
     \begin{tabular}{>{}l >{}l}
@@ -530,6 +547,7 @@
       \multicolumn{2}{l}{\emph{#2}, \textsc{#3}}\\
       \quad \mailSymbol & \href{mailto:#4}{#4} \\
       \quad \phoneSymbol & #5 \\
+      \quad \mobileSymbol & \href{tel:#6}{#6} \\
     \end{tabular}
   \end{minipage}%
 }

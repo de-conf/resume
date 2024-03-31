@@ -13,7 +13,7 @@
 
 % File information shown at the footer of the last page
 \fileinfo{%
-  \faCopyright{} 2019--2020, 陈佳庚 \hspace{0.5em}
+  \faCopyright{} 2024--2024, 陈佳庚 \hspace{0.5em}
   \creativecommons{by}{4.0} \hspace{0.5em}
   \githublink{de-conf}{resume} \hspace{0.5em}
   \faEdit{} \today
@@ -31,12 +31,14 @@
 \profile{
   \mobile{18700668464}
   \email{mail@deconf.xyz}
-  \github{de-conf} \\
+  \blog{deconf.xyz} \\
   \university{西安石油大学}
   \degree{网络工程 \textbullet 本科}
-  \birthday{1997-09-07}
-  \texttt{求职意向:}{Linux系统运维，云计算方向，Devops}
-  %\address{西安}
+  \birthday{1998-04-07} 
+  \github{de-conf} \\
+  \job{求职意向:Linux系统运维，云计算方向，Devops}
+  \address{陕西省 \textbullet 西安市}
+  % \icontext{<fa-briefcase>}{<text>}
   % Custom information:
   % \icontext{<icon>}{<text>}
   % \iconlink{<icon>}{<link>}{<text>}
@@ -52,11 +54,7 @@
 {\onehalfspacing\hspace{2em}%
 本人乐观向上，自我驱动力和学习能力强，热爱尝试新事物，认同开源和分享精神.
 擅长，热衷计算机和网络技术，
-有 3 年的 Linux 使用经验，基本掌握 Shell、Python 和 C 语言编程。
-积极实践自由开源精神.
-在 \link{https://github.com/de-conf}{GitHub} 上分享多个项目，
-喜欢在个人网站\link {http://blog.deconf.xyz}{blog.deconf.xyz}记录笔记
-并积极参与其他多个开源项目。
+有 5 年的 Linux 使用经验，掌握 Shell、Python 等脚本语言编程
 \par}
 
 %======================================================================
@@ -64,13 +62,25 @@
 %======================================================================
 \begin{competences}
   \comptence{操作系统}{%
-    \icon{\faLinux} Linux （3 年）
+    {\faLinux} Linux （5 年）---（CentOS, Ubuntu，Alpine）
   }
   \comptence{编程}{%
-    Python, C, Shell，SQL
+  {\faPython} Python,{\faTerminal} Shell, {\faDatabase} SQL
+  }
+  \comptence{运维}{%
+  Ansible, {\faDocker}Docker
+  }
+  \comptence{监控}{%
+    Zabbix,Prometheus,Grafana,ELK Stack
   }
   \comptence{工具}{%
-    SSH, Git, Make, Tmux, Vim, Openstcak, Ansible,Travis-Ci，KVM，MySQL
+    Git, Make, Tmux, Vim
+  }
+  \comptence{网络与安全}{%
+    Wireshark,Firewalls,VPN,SSL/TLS
+  }
+  \comptence{数据库}{%
+  Postgres,Mysql,Oracle
   }
   %\comptence{\icon{\faLanguage} 语言}{
   %  \textbf{英语} --- 读写（基础）
@@ -78,120 +88,133 @@
 \end{competences}
 
 %======================================================================
-\sectionTitle{教育背景}{\faGraduationCap}
+\sectionTitle{教育背景 \&\& \ \ \icon{\faBriefcase}工作经历}{\faGraduationCap}
 %======================================================================
 \begin{educations}
   \education%
-    {2016.09}%
-    [2021.06]%
+    {2021.06}%
+    [2016.09]%
     {西安石油大学}%
     {计算机学院}%
     {网络工程}%
     {本科}
 \end{educations}
+\begin{educations}
+  \education%
+    {至今}%
+    [2021.6]%
+    {西安}%
+    {新路网络科技有限公司}%
+    {运维服务部}%
+    {运维工程师}
+\end{educations}
 %======================================================================
-\sectionTitle{主修课程}{\faGraduationCap}
+% \sectionTitle{主修课程}{\faGraduationCap}
 %======================================================================
-\begin{itemize}
-  \item C语言程序设计基础、C++程序设计、数据结构、数据库原理与应用、操作系统
-\end{itemize}
+% \begin{itemize}
+%   \item C语言程序设计基础、C++程序设计、数据结构、数据库原理与应用、操作系统
+% \end{itemize}
 %======================================================================
 \sectionTitle{专业技能}{\faCogs}
 %======================================================================
 \begin{itemize}
-  \item 具有Openstack使用经验，熟悉Nova,Neutron，Glanc组件
-  \item 使用Travis-Ci自动化部署博客
-  \item 使用 Ansible 管理 VPS，部署个人域名邮箱、网站、Git、DNS 等服务
-  \item 搭建并管理校内服务器，部署 PXE、团队Wiki 等
-  \item 具有网络安全相关的基础知识与实践，参加过多次CTF攻防赛
-  \item 会使用wireshark做流量分析，成功模拟了校园网认证过程
-  \item 熟练使用Git代码管理工具进行团队开发和版本控制
-  \item 使用Docker容器进行服务、代码部署
-  \item 了解MySQL数据库的增删改查
+  \item 精通Linux操作系统内核调优，numa架构调优，dpdk参数调优等.
+  \item 熟悉docker容器构建，docker-compose容器编排.精通docker各类部署和运维经验.
+  \item 熟悉各类zabbix,grafana监控配置与调优.
+  \item 熟悉部署工具ansible. 熟悉各类CI/CD 工具，Jenkins构建pipeline脚本等
+  \item 熟练shell/python脚本，可处理各类线上业务与数据.
+  \item 掌握各种nginx,lvs 等web中间件配置.
+  \item 掌握各类虚拟化kvm, openstack, proxmox, vmware esxi虚拟化技术与配置.
+  \item 掌握postgres,mysql,oracle 主流数据库操作与优化.
+  \item 了解网络设备交换路由配置.熟悉wireshark分析网络，进行网络排障与调优.
 \end{itemize}
 
 %======================================================================
-\sectionTitle{项目}{\faCode}
+\sectionTitle{工作经验}{\faCode}
 %======================================================================
 \begin{itemize}
-  \item \link{https://github.com/de-conf/arduino.io}{\texttt{arduino.io}}
-  (Python,CSS,html)
-  校园机房温度监控系统，配合arduino开发板和传感器实现温度监控和调节
-  \item \link{https://github.com/de-conf/openwrt-dogcom}{\texttt{docgom}}
-  (C)
-  模拟校园网客户端拨号软件，用于嵌入式OpenWrt Linux
-  \item \link{https://github.com/de-conf/blog-source}{\texttt{blog-source}}
-  (Js,CSS)
-  个人博客源码，使用了Travis-Ci实现了在线编辑文件，立即生效，自动部署
-  \item \link{https://github.com/de-conf/resume}{\texttt{resume}}:
-    (\LaTeX)
-    \emph{此简历}的源文件
+  \item 近 100+ 生产环境Linux服务器日常运维工作，以及处理突发应急事件.\\ 熟练处理各类Linux发行版问题与故障. 
+  \item 线上 2700+ 交换路由设备的监控与日志留存，熟悉zabbix监控模板的建立，修正与完善.\\精通zabbix 服务器与代理的维护与等.
+  \item 产品线高性能网关的维护与运维. 熟悉Linux系统调优与网卡优化以及dpdk参数优化.
+  \item 线上5+所高校认证系统的维护.熟悉3A流程，熟悉freeradius 配置，熟悉unlang 配置语法.
+  \item 线上生产环境认证系统的部署与上线.精通docker-compose 容器编排. 熟悉云平台AWS的日常运维管理. 
+  \item 内网高性能网关的研发环境配置，掌握CI/CD流程，熟悉Jenkins构建流程。
+  \item 内网公共平台 confluence, jira ,gitlab平台的搭建与维护.
+  \item 各类型数据包的分析，熟练定位网络故障与性能瓶颈.
+  \item 内部运维知识库的管理与构建，输出相关的培训文档与手册.
 \end{itemize}
 
 
 %======================================================================
-\sectionTitle{校园经历}{\faBriefcase}
+\sectionTitle{项目经验}{\faBriefcase}
 %======================================================================
 \begin{experiences}
   \experience
-  [2021.05]%
-  {2021.03}%
-  {在中科曙光实习，主要学习Openstack,云计算架构，私有云}%
+  []%
+  {2024.03}%
+  {高性能网关项目}%
   [\begin{itemize}
-    \item 学习Openstack各个组件，熟练使用各个基本组件命令，大致了解组件的交互过程，
-    \item 了解云计算的board-spine-leaf组网架构
-    \item 熟悉定制化镜像的制作流程，提出使用diskimage-builder进行镜像制作自动化，使用CI控制整个流程的概念
-  \end{itemize}
-  ]
-  
-  \separator{0.5ex}
+    \item 项目介绍：\\
+    本项目主要基于\link{https://wiki.fd.io/view/VPP}{VPP} + \link{https://www.dpdk.org}{DPDK} 开源框架,构建了IPOE TO PPPOE代拨网关.
+    \item 主要职责：\\
+    负责项目的开发环境的搭建,性能的测试与评估,线上的维护与部署. 
+    \item 主要业绩: \\
+    使用systemd-coredump捕获异常崩溃,协助研发分析原因,并构建了CI/CD 流程, 实现了提交代拨后自动构建,自动打包的操作. \\
+    使用 \link{https://trex-tgn.cisco.com/}{TREX} 构建各类数据包协助研发测试性能与输出指标. \\
+    上线后的故障排查,日志的分析与包括分析各类数据包 pppoe会话的交互,radius 会话交互等.\\
+    输出标准化部署流程文档,指导其他节点标准化的部署.并使用zabbix脚本监控运行时指标,确保运行的稳定性. 
+  \end{itemize}]
+  \\
   \experience
-  [2020.08]%
-  {2020.10}%
-  {当选网络安全协会副会长，举办西安石油大学第二届线上CTF比赛，带领新生学习CTF相关知识技能}%
+  []%
+  {}%
+  {高校认证项目}%
   [\begin{itemize}
-    \item 使用Docker部署CTF虚拟靶场，搭建比赛环境
-  \end{itemize}
-  ]
-
-  \separator{0.5ex}
+    \item 项目介绍：\\
+    基于\link{https://freeradius.org/}{FreeRadius} 为基础,自研计费的认证系统.
+    \item 主要职责：\\
+    新增学校认证系统的部署与维护,与三方认证系统的对接(电信/移动/派网).满足运营提出的认证策略(使用freeradius unlang构建的policy).
+    与第三方(BRAS)网关的对接(portal 协议的对接).
+    \item 主要业绩: \\
+    负责的高校(西北大学,西安科技大学,西北政法大学,西安欧亚学院,湖北经济学院)认证系统500天无故障,运行平稳.
+    对于私有的portal协议重新构建了\link{https://github.com/de-conf/huawei-portalv2-wireshark-pluging/blob/main/wireshark-plugin-huawei-portal-v2.lua}{wireshark解析脚本},方便同事排错.
+  \end{itemize}]
+  \\
   \experience
-  [2019.06]%
-  {2020.05}%
-  {已基本对个人VPS利用Ansible的各项服务实现了自动化部署 }%
+  []%
+  {}%
+  {出口缓存项目}%
   [\begin{itemize}
-    \item 学习自动化运维的工具，如Ansible,Zabbix，Python
-  \end{itemize}
-  ]
-  
-  \separator{0.5ex}
+    \item 项目介绍：\\
+    基于\link{https://lancache.net/}{nginx的缓存项目}的部署.减少出口带宽占用,加快内网下载速度.
+    \item 主要职责: \\
+    项目的选型,网络架构的设计,\link{https://github.com/lancachenet/monolithic/issues/175}{缓存卡下载问题}的排查与解决.
+    \item 主要业绩: \\
+    部署后节约出口带宽2Gbps,内网可达1000Mbps的下载速率,用户满意度达到95\%.
+  \end{itemize}]
+  \\
   \experience
-  [2018.09]%
-  {2019.06}%
-  {参加并获得第十二届全国大学生信息安全竞赛省级三等奖}%
+  []%
+  {2021.06}%
+  {网络设备配置自动备份与日志留存}%
   [\begin{itemize}
-    \item 加入网络安全协会，和朋友一起学习CTF(网络攻防赛)相关知识，我主要负责Misc(杂项)方向相关
-  \end{itemize}
-  ]
-
-\separator{0.5ex}
-\experience%
-[2018.04]%
-{2018.08}%
-{使用Travis-Ci为blog提供自动部署服务}%
-[\begin{itemize}
-\item 使用开源项目 \link{https://github.com/hexojs/hexo}{\texttt{hexo}} 和 \link{https://github.com/next-theme/hexo-theme-next}{\texttt{hexo-theme-next}} 
-完成自己的博客网页
-\end{itemize}]
-
-\separator{0.5ex}
-\experience%
-[2017.08]%
-{2017.10}%
-{系统学习Linux基础知识，包括SHELL相关的知识}%
-[\begin{itemize}
-\item 使用WireShark分析校园网登录软件流量，使用 \link{https://github.com/de-conf/openwrt-dogcom}{\texttt{dogcom}} 项目，成功在OpenWrt进行了登录拨号
-\item 接触嵌入式Linux（OpenWrt）
-\end{itemize}]
+    \item 项目介绍：\\
+    基于Python模块Netmiko构建\link{https://github.com/de-conf/network_config_backup}{自动化脚本},在linux服务器自动备份网络设备配置,并推送私有gitlab仓库,实现了网络配置的版本控制.\\
+    通过Netmiko脚本,自动配置各类网络设备syslog服务器,各学校节点配置logstash,并推送elasticsearch服务器.
+    \item 主要职责: \\
+    自动化脚本的构建,各类环境(gitlab,elk)的搭建与维护.
+    \item 主要业绩: \\
+    从无到有搭建了网络设备的配置备份与日志留存系统.满足了内部运维的需求和外部网络安全的需求.
+  \end{itemize}]
+  % \experience
+  % [2021.05]%
+  % {2021.03}%
+  % {在中科曙光实习，主要学习Openstack,云计算架构，私有云}%
+  % [\begin{itemize}
+  %   \item 学习Openstack各个组件，熟练使用各个基本组件命令，大致了解组件的交互过程，
+  %   \item 了解云计算的board-spine-leaf组网架构
+  %   \item 熟悉定制化镜像的制作流程，提出使用diskimage-builder进行镜像制作自动化，使用CI控制整个流程的概念
+  % \end{itemize}]
 \end{experiences}
+
 \end{document}
