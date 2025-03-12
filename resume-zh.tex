@@ -122,9 +122,9 @@
   \item 精通docker容器构建,docker-compose容器编排.精通docker各类部署和运维经验.
   \item 熟悉各类zabbix,grafana,prometheus 监控配置与调优.
   \item 熟悉部署工具ansible. 熟悉各类CI/CD 工具,Jenkins构建pipeline脚本等.
-  \item 精通shell/python脚本语言,可处理各类线上业务与数据.
+  \item 精通shell/python脚本语言,熟练处理各类线上业务与数据.
   \item 掌握各种nginx,,tomcat,apache 等web中间件配置.
-  \item 掌握各类虚拟化kvm, openstack, proxmox, vmware esxi虚拟化技术与配置.
+  \item 掌握各类虚拟化kvm, proxmox, vmware esxi虚拟化技术与配置.
   \item 掌握postgres,mysql,oracle 主流数据库操作与优化.
   \item 了解网络设备交换路由配置.精通wireshark分析网络,进行网络排障与调优.
 \end{itemize}
@@ -135,6 +135,7 @@
 \begin{itemize}
   \item 近 100+ 生产环境Linux服务器日常运维工作,以及处理突发应急事件.\\ 熟练处理各类Linux发行版(centos/debian/ubuntu/alpine)问题与故障. 
   \item 线上 2700+ 交换路由设备的监控与日志留存,精通zabbix监控模板的建立,修正与完善.\\精通zabbix 服务器与代理的维护与等.
+  \item 生产环境elk与prometheus、granfa维护. 
   \item 产品线高性能网关的维护与运维. 熟悉Linux系统调优与网卡优化以及dpdk参数优化.
   \item 线上5+所高校认证系统的维护.熟悉3A流程,熟悉freeradius配置,熟悉unlang 配置语法.
   \item 线上生产环境认证系统的部署与上线.精通docker-compose 容器编排. 熟悉云平台AWS的日常运维管理. 
@@ -149,9 +150,10 @@
 \sectionTitle{项目经验}{\faBriefcase}
 %======================================================================
 \begin{experiences}
+  
   \experience
-  [2021.06]%
-  {至今}%
+  [至今]%
+  {2021.06}%
   {高性能网关项目}%
   [\begin{itemize}
     \item 项目介绍：\\
@@ -166,8 +168,8 @@
   \end{itemize}]
   \\
   \experience
-  [2021.06]%
-  {至今}%
+  [至今]%
+  {2021.06}%
   {高校认证项目}%
   [\begin{itemize}
     \item 项目介绍：\\
@@ -177,35 +179,80 @@
     与第三方(BRAS)网关的对接(portal 协议的对接).
     \item 主要业绩: \\
     负责的高校(西北大学,西安科技大学,西北政法大学,西安欧亚学院,湖北经济学院)认证系统500+天无故障,运行平稳.
-    对于私有的portal协议重新构建了\link{https://github.com/de-conf/huawei-portalv2-wireshark-pluging/blob/main/wireshark-plugin-huawei-portal-v2.lua}{portal协议wireshark解析脚本},方便协议分析与排错.
+    对于华为私有的portal协议重新构建了\link{https://github.com/de-conf/huawei-portalv2-wireshark-pluging/blob/main/wireshark-plugin-huawei-portal-v2.lua}{portal协议wireshark解析脚本},方便协议分析与排错.
   \end{itemize}]
   \\
   \experience
-  [2022.06]%
-  {2023.06}%
+  [2023.06]%
+  {2022.06}%
   {出口缓存项目}%
   [\begin{itemize}
     \item 项目介绍：\\
     基于\link{https://lancache.net/}{nginx的缓存项目}的部署.减少出口带宽占用,加快内网下载速度.
     \item 主要职责: \\
-    项目的选型,网络架构的设计,.
+    项目的选型,网络架构的设计. 
     \item 主要业绩: \\
     部署后节约出口带宽2Gbps,内网可达1000Mbps的下载速率,用户满意度达到95\%. 解决线上关键问题\link{https://github.com/lancachenet/monolithic/issues/175}{下载卡99\%问题}
   \end{itemize}]
   \\
   \experience
-  [2023.06]%
-  {2023.09}%
-  {网络设备配置自动备份与日志留存}%
+  [2023.09]%
+  {2023.06}%
+  {内部各系统维护改造}%
   [\begin{itemize}
     \item 项目介绍：\\
-    基于Python模块Netmiko构建\link{https://github.com/de-conf/network_config_backup}{自动化脚本},在linux服务器自动备份网络设备配置,并推送私有gitlab仓库,实现了网络配置的版本控制.\\
-    通过Netmiko脚本,自动配置各类网络设备syslog服务器,各学校节点配置logstash,并推送elasticsearch服务器.
+    公司内部系统维护与改造,包括confluence,jira,gitlab等.
     \item 主要职责: \\
-    自动化脚本的构建,各类环境(gitlab,elk)的搭建与维护.
+    内部系统硬件选型到部署,旧系统数据迁移等.由物理裸机部署到docker 容器化部署等。
     \item 主要业绩: \\
-    从无到有搭建了网络设备的配置备份与日志留存系统.满足了内部运维的需求和外部网络安全的需求.
+    系统稳定性、可维护性提升，由经常性宕机到目前稳定运行2年. 可维护性提升，容器化部署后,系统可升级，可迁移，可扩展.
   \end{itemize}]
+  \\
+  \experience
+  [2024.01]%
+  {2023.09}%
+  {zabbix 监控系统优化}%
+  [\begin{itemize}
+    \item 项目介绍：\\
+    生产环境zabbix监控系统优化,包括监控模板的修正,告警的优化等.
+    \item 主要职责: \\
+    zabbix系统性能优化,数据库优化等.
+    \item 主要业绩: \\
+    zabbix 由旧版本5.4 升级为最新版本 7.0.\\
+    后端数据库由mysql 替换为timescaledb(基于postgres)的时序数据库，添加定时分表策略,性能提升500\%。通过压缩策略,数据库空间占用减少200\%. \\
+    按照网络设备型号,通过厂商mib文件,构建了新的监控模板,单机监控项达到1000+,告警规则达到100+，告警准确率达到99.9\%。
+  \end{itemize}]
+  \\
+  \\
+  \experience
+  [2024.02]%
+  {2024.01}%
+  {域名证书的维护}%
+  [\begin{itemize}
+    \item 项目介绍：\\
+    生产环境域名证书的维护,包括证书的申请,更新,部署等.
+    \item 主要职责: \\
+    证书的申请,更新,部署等.
+    \item 主要业绩: \\
+   大量域名证书使用certbot自申请,自动更新,自部署,减少人工干预,提高效率,减低人工失误. \\
+   全部域名增加监控,监控证书的过期时间,提前30天告警,保证证书的有效性.
+  \end{itemize}]
+  \\
+  \experience
+  [至今]%
+  {2024.01}%
+  {AWS 云平台维护}%
+  [\begin{itemize}
+    \item 项目介绍：\\
+    生产环境AWS云平台维护,包括EC2,CloudFront,S3等.
+    \item 主要职责: \\
+    稳定性维护,成本优化,安全性优化等.
+    \item 主要业绩: \\
+    云平台管理, EC2 实例规格的优化,由按需实例转为预留实例,成本节约30\%. 设置EC2 默认的安全组,避免误操作导致的安全问题. \\
+    使用AWS的cloudwatch,设置监控项,监控实例的CPU,内存,磁盘等,保证实例的稳定性. \\
+    使用AWS的S3,设置数据备份策略,保证数据的安全性.
+  \end{itemize}]
+  \\
   % \experience
   % [2021.05]%
   % {2021.03}%
